@@ -13,7 +13,7 @@ exploit_ssh() {
     read Target
     echo "Exploiting SSH..."
     msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" > "sshver.txt"
-    echo -e "Data is saved as sshver.txt"
+    echo -e "Check subfinder.txt" 
 }
 
 # Вызов функций
