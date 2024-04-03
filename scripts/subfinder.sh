@@ -1,3 +1,4 @@
+#!/bin/bash
 echo -n "Enter the domain: " 
 read domain	
 echo "Starting..." 
