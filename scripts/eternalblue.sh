@@ -1,3 +1,4 @@
+#!/bin/bash
     #my_ip=$(ip addr show | grep 'inet 192' | awk '{print $2}' | cut -d'/' -f1)
     echo "Check the target for the EternalBlue vulnerability"
     echo -n "Write the IP: "
