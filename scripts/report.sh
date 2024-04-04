@@ -12,6 +12,7 @@ temp_dir=$(mktemp -d)
 
 # Копирование отчетов из директории outputs во временную директорию
 cp -r outputs/* "$temp_dir"
+cd outputs
 
 # Архивация временной директории с отчетами
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
