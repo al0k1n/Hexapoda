@@ -7,5 +7,5 @@ fi
 echo -n "[+] Enter Target : "
 read Target
 echo "Please wait..."
-nmap -sV -sC -O -T4 -n -Pn $Target > "scanot_data.txt"
-echo -e "Check subfinder.txt" 
+nmap -sV -sC -O -T4 -n -Pn $Target > "scantcp1000_out.txt"
+echo -e "Check scantcp1000_out.txt" 
