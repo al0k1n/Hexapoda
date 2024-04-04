@@ -26,14 +26,16 @@ if [ ! -d "scripts" ]; then
     exit 1
 fi
 
-echo "Never limit yourself to searchsploit. Also, search in Google for 'program_name version exploit'."
-read -p "Enter the keyword to search for vulnerabilities: " keyword
-
+# Директория для сохранения результатов
+output_directory="outputs"
 # Имя файла для сохранения результатов
 output_file="searchsploit_out.txt"
 
+echo "Never limit yourself to searchsploit. Also, search in Google for 'program_name version exploit'."
+read -p "Enter the keyword to search for vulnerabilities: " keyword
+
 # Поиск уязвимостей с использованием searchsploit и сохранение результатов в файл
-searchsploit "$keyword" > "$output_file"
+searchsploit "$keyword" > "$output_directory/$output_file"
 
 # Вывод дополнительной информации
 echo "Search results have been saved to $output_file."
