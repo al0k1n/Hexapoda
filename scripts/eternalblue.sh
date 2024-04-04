@@ -25,6 +25,6 @@
             fi
         done
     else
-        echo "Unlucky...$target cant be hacked using EternalBlue" > "eternalblue.txt"
+        echo "Unlucky...$target cant be hacked using EternalBlue" > "eternalblue_out.txt"
         echo "Unlucky...$target cant be hacked using EternalBlue"
     fi
