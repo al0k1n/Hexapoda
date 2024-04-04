@@ -12,8 +12,8 @@ exploit_ssh() {
     echo -n "Enter Target: "
     read Target
     echo "Exploiting SSH..."
-    msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" > "sshver.txt"
-    echo -e "Check subfinder.txt" 
+    msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" > "sshversion_out.txt"
+    echo -e "Check sshversion_out.txt" 
 }
 
 # Вызов функций
