@@ -1,6 +1,10 @@
 #!/bin/bash
-echo -n  "[+] Enter Target : "
+if ! command -v nmap &> /dev/null; then
+    echo "Error: dirsearch is not installed. Please install it before using this script."
+    exit 1
+fi
+
+echo -n "[+] Enter Target : "
 read Target
-echo "Please wait..."
-nmap -v -p 0-65535 -A $Target > "scanall_data.txt"
-echo -e "Check subfinder.txt"
+nmap $Target -p- -v -sV --reason > "scanall_data.txt"
+echo -e "Data is saved as scanall_data.txt"
