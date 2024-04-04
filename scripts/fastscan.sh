@@ -8,5 +8,5 @@ fi
 echo -n "[+] Enter Target : "
 read Target
 echo "Please wait..."
-nmap -F $Target > "fastscan.txt"
+nmap -F $Target > "fastscan_out.txt"
 echo -e "Check fastscan_out.txt" 
