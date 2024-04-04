@@ -6,5 +6,5 @@ fi
 
 echo -n "[+] Enter Target : "
 read Target
-nmap $Target -p- -v -sV --reason > "scanall_data.txt"
-echo -e "Data is saved as scanall_data.txt"
+nmap $Target -p- -v -sV --reason > "scantcpall_out.txt"
+echo -e "Data is saved as scantcpall_out.txt"
