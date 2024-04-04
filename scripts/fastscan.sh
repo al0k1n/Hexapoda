@@ -9,4 +9,4 @@ echo -n "[+] Enter Target : "
 read Target
 echo "Please wait..."
 nmap -F $Target > "fastscan.txt"
-echo -e "Check subfinder.txt" 
+echo -e "Check fastscan_out.txt" 
