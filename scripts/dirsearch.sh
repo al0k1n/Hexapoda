@@ -9,6 +9,8 @@ fi
 
 # Директория для сохранения результатов
 output_directory="outputs"
+# Имя файла для сохранения результатов
+output_file="dirsearch_out.txt"
 
 # Проверка текущей директории
 if [[ ! $(pwd) =~ "/Hexapoda" ]]; then
@@ -23,8 +25,15 @@ if [ ! -d "outputs" ]; then
     exit 1
 fi
 
+# Проверка наличия поддиректории outputs
+if [ ! -d "scripts" ]; then
+    echo "Error: The 'scripts' directory does not exist in the Hexapoda directory."
+    echo "Please make sure the 'scripts' directory exists in the Hexapoda directory before running this script."
+    exit 1
+fi
+
 # Запрос цели для сканирования
 read -p "Enter the target URL (http://example.com): " target_url
 
 # Запуск dirsearch для указанной цели и сохранение результатов в указанную директорию
-dirsearch -u "$target_url" -o "$output_directory/dirsearch_output.txt"
+dirsearch -u "$target_url" -o "$output_directory/$output_file"
