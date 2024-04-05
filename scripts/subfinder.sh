@@ -7,5 +7,5 @@ fi
 echo -n "Enter the domain: " 
 read domain	
 echo "Starting..." 
-subfinder -d $domain -o subfinder.txt
+subfinder -d $domain -o subfinder_out.txt
 echo "Check subfinder_out.txt" 
