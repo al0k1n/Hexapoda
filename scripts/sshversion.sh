@@ -1,10 +1,14 @@
 #!/bin/bash
-# Сканирование конкретно по порту 22
+if ! command -v msfconsole &> /dev/null; then
+    echo "Error: searchsploit is not installed. Please install it before using this script."
+    exit 1
+fi
+
 scan_ports() {
     echo -n "Enter Target: "
     read Target
     echo "Scanning ports..."
-    nmap -p 22 --open -oG sshver.txt $Target
+    nmap -p 22 --open $Target
 }
 
 # Функция для использования Metasploit для получения информации о SSH
