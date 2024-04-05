@@ -1,5 +1,5 @@
 #!/bin/bash
-bash logo.sh
+bash logomenu.sh
 cd /scritps
 echo "█----------------------------------█-----------------------█----------------------------█"
 echo "█	      Scans                █          FTP          █            SSH             █"
