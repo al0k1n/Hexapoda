@@ -1,4 +1,5 @@
 #!/bin/bash
+bash logo.sh
 cd /scritps
 echo "█----------------------------------█-----------------------█----------------------------█"
 echo "█	      Scans                █          FTP          █            SSH             █"
@@ -24,100 +25,59 @@ echo -n "Enter the respective number from tool list that you want to use: "
 read number
 echo ""
 case $number in
-	1)
-  		bash script.sh
-    		;;
-
-	2)
-
-		;;
-          
-	3)
-
-		;;
 	
-	4)
-
-		;;
-
-	5)
-
-		;;
-
-	6)
-
-		;;
-
-	7)
-		
-		;;
-
-	8)
-		
-		;;
-
-	9)
-		
-		;;
-
-	10)
-		
-		;;
-	11)
-		
-		;;
+ 1)	bash hostdiscovery.sh
+ 	;;
 	
-	12)
-		
-		;;
-
-	13)
-		
-		;;
-
-	14)
-		
-		;;
-
-	15)
-		
-		;;
-
-
-	16)
-		
-		;;
-
-	17)
-		
-		;;
-
-	18)
-		
-		;;
-
-	19)
-		
-		;;
-
-	
-	20)
-		
-		;;
-
-	21)
-
-  		;;
-
-        22) 
-
-	       ;;
-	23)
-
- 		;;
-   
-	*)	
-		echo "Please give valid choice!!!"
-		;;
+ 2)	bash scantcpall.sh
+ 	;;
+ 3)	bash scantcp1000.sh
+ 	;;
+ 4)	bash fastscan.sh
+ 	;;
+ 5)	bash scanudp100.sh
+ 	;;
+ 6)	bash ftpсheckvulns.sh
+ 	;;
+ 7)	bash ftpcheck.sh
+ 	;;
+ 8)	bash ftpversion.sh
+ 	;;
+ 9)	bash sshcheck.sh
+ 	;;
+ 10)	bash sshversion.sh
+ 	;;
+ 11)	bash sshfingerprint.sh
+ 	;;
+ 12)	bash sshlocalusers.sh
+ 	;;
+ 13)	bash dirsearch.sh
+ 	;;
+ 14)	bash niktoscan.sh
+ 	;;
+ 15)	bash subfinder.sh
+ 	;;
+ 16)	bash sourcecodecheck.sh
+ 	;;
+ 17)	bash headcheck.sh
+ 	;;
+ 18)	bash enumsmb.sh
+ 	;;
+ 19)	bash versionsmb.sh
+ 	;;
+ 20)	bash checkvulnsmb.sh
+ 	;;
+ 21)	bash eternalblue.sh
+ 	;;
+ 22)	bash sharedsmb.sh
+ 	;;
+ 23)	bash
+ 	;;
+ 24)	bash
+ 	;;
+ 25)	bash
+ 	;;
+ *)	echo "Please give valid choice!!!"
+ 	;;
 
 esac
