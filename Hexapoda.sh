@@ -5,7 +5,7 @@ scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$scriptDir/installation.sh" # запуск установки необходимых компонентов
 
 if [ -f "$scriptDir/.installed" ]; then
-    echo ".installed file found. Expecting everything to be already present."
+    echo "Great. Installed file found. Expecting everything to be already present."
 else
     echo "Things might not be installed. Setting up the environment and installing assets..."
     setupEnvironment || { echo "Failed to setup Environment"; exit 1; }
