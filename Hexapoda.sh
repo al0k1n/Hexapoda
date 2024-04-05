@@ -4,16 +4,12 @@ scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$scriptDir/logo.sh" # запуск лого
 . "$scriptDir/installation.sh" # запуск установки необходимых компонентов
 
-if [ -f $scriptDir/.installed ]; then
-    echo ".installed file found";
-    echo "Expecting things to be already present"
+if [ -f "$scriptDir/.installed" ]; then
+    echo ".installed file found. Expecting everything to be already present."
 else
-    echo "Things might not be installed"
-    echo "Will Setup Environment and install assets"
-    setupEnvironment
-    abort_on_failure "Failed to setup Environment"
-    touch $scriptDir/.installed
-
+    echo "Things might not be installed. Setting up the environment and installing assets..."
+    setupEnvironment || { echo "Failed to setup Environment"; exit 1; }
+    touch "$scriptDir/.installed" || { echo "Failed to create .installed file"; exit 1; }
 fi
 
 . "$scriptDir/launch.sh" # запуск 
