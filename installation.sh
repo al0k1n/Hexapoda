@@ -12,16 +12,13 @@ function setupEnvironment(){
 
     echo "Installing git"
     eval $(echo "$sudoo apt install -y git;")
-}
-setupEnvironment
-function downloadGitProjects(){  
-    cd  $scriptDir
-    git clone https://github.com/GerbenJavado/LinkFinder;
-    git clone https://github.com/devanshbatham/ParamSpider;
-    git clone https://github.com/m4ll0k/SecretFinder;
-    git clone https://github.com/projectdiscovery/nuclei-templates;
-    git clone https://github.com/maurosoria/dirsearch
-    git clone https://github.com/s0md3v/Corsy.git;
-    git clone https://github.com/hisxo/gitGraber.git;
-    git clone https://github.com/lobuhi/byp4xx.git;
+    
+    echo "Installing Metasploit Framework"
+    eval $(echo "$sudoo apt install -y metasploit-framework;")
+
+    echo "Installing Dirsearch"
+    eval $(echo "$sudoo apt install -y dirsearch;")
+
+    echo "Installing Subfinder"
+    eval $(echo "$sudoo apt install -y subfinder;")
 }
