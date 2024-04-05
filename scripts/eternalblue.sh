@@ -6,7 +6,7 @@
     result=$(nmap -p 445 --script smb-vuln-ms17-010.nse $target | grep "State: VULNERABLE")
 
     if [ -n "$result" ]; then
-        echo "BINGO!!! $target can be hacked using EternalBlue" > "eternalblue.txt"
+        echo "BINGO!!! $target can be hacked using EternalBlue" > "eternalblue_out.txt"
         echo "BINGO!!! $target can be hacked using EternalBlue"
         
         while true; do
