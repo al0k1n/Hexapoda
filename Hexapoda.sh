@@ -12,8 +12,6 @@ else
     log "Will Setup Environment and install assets"
     setupEnvironment
     abort_on_failure "Failed to setup Environment"
-    setupAssets  
-    abort_on_failure "Failed to Setup Assets"
     touch $scriptDir/.installed
 
 fi
