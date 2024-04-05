@@ -30,5 +30,5 @@ read -p "[+] Enter the target (IP address): " target
 
 # Запуск Hydra для брутфорса
 echo "Bruteforce starting..."
-hydra -f -L "$login_file" -P "$password_file" -o "$output_dir/hydra_output.txt" -e ns -v "$protocol://$target"
+hydra -f -L "$login_file" -P "$password_file" -o "$output_dir/bruter_out.txt" -e ns -v "$protocol://$target"
 echo "BruteForce End!"
