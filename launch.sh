@@ -1,4 +1,5 @@
 #!/bin/bash
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 bash logomenu.sh
 cd scripts
 echo "█----------------------------------█-----------------------█----------------------------█"
