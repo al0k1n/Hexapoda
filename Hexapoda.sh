@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . "$scriptDir/logo.sh" # запуск лого
