@@ -5,7 +5,7 @@
 
 ## How to install?
 
-* `https://github.com/al0k1n/Hexapoda`
+* `git clone https://github.com/al0k1n/Hexapoda`
 * `cd Hexapoda`
 * `chmod +x *.sh`
 * `./Hexapoda.sh`
