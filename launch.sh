@@ -1,6 +1,6 @@
 #!/bin/bash
-scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-. "$scriptDir/logomenu.sh"
+#scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#. "$scriptDir/logomenu.sh"
 echo "█----------------------------------█-----------------------█----------------------------█"
 echo "█	      Scans                █          FTP          █            SSH             █"
 echo "█----------------------------------█-----------------------█----------------------------█"
@@ -80,4 +80,4 @@ case $number in
  *)	echo "Please give valid choice!!!"
  	;;
 esac
-. "$scriptDir/launch.sh"
+#. "$scriptDir/launch.sh"
