@@ -81,5 +81,6 @@ case $number in
  	;;
  *)	echo "Please give valid choice!!!"
  	;;
+  cd ..
 esac
 . "$scriptDir/launch.sh"
