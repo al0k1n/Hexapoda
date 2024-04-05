@@ -8,9 +8,9 @@
 * `git clone https://github.com/al0k1n/Hexapoda/edit/main/README.md
 * `cd Hexapoda`
 * `chmod +x *.sh`
-* `./Cobra.sh`
+* `./Hexapoda.sh`
 
 ## How to use?
 
-* for tool install `./Hexapoda.sh`
-* to use tools `./launch.sh`
+* For tool install `./Hexapoda.sh`
+* To use tools `./launch.sh`
