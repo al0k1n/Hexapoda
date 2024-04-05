@@ -79,5 +79,5 @@ case $number in
  	;;
  *)	echo "Please give valid choice!!!"
  	;;
-bash launch.sh
 esac
+bash launch.sh
