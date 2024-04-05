@@ -1,7 +1,7 @@
 #!/bin/bash
    # Проверка наличия searchsploit
 if ! command -v msfconsole &> /dev/null; then
-    echo "Error: searchsploit is not installed. Please install it before using this script."
+    echo "Error: msfconsole is not installed. Please install it before using this script."
     exit 1
 fi
 echo -n "[+] Enter Host: "
