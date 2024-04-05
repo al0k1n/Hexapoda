@@ -1,18 +1,7 @@
 
 function setupEnvironment(){
-    echo "checking your system and setting up the environment: "
+    echo "Сhecking your system and setting up the environment: "
     eval $(echo "$sudoo apt update;")    
-
-    echo "setting gopath";
-    if [ -f ~/.bashrc ]; then
-        echo "export GOPATH=\$HOME/go" >> ~/.bashrc
-        echo "export PATH=\$PATH:\$GOPATH/bin" >> ~/.bashrc
-        source ~/.bashrc;
-    elif [ -f ~/.zshrc ]; then
-        echo "export GOPATH=\$HOME/go" >> ~/.zshrc
-        echo "export PATH=\$PATH:\$GOPATH/bin" >> ~/.zshrc
-        source ~/.zshrc;
-    fi
 
     echo "Installing golang"
     eval $(echo "$sudoo apt install -y golang;")
@@ -23,8 +12,16 @@ function setupEnvironment(){
 
     echo "Installing git"
     eval $(echo "$sudoo apt install -y git;")
-
-    echo "Installing libcap-dev"
-    eval $(echo "$sudoo apt install -y libpcap-dev;")
 }
 setupEnvironment
+function downloadGitProjects(){  
+    cd  $scriptDir
+    git clone https://github.com/GerbenJavado/LinkFinder;
+    git clone https://github.com/devanshbatham/ParamSpider;
+    git clone https://github.com/m4ll0k/SecretFinder;
+    git clone https://github.com/projectdiscovery/nuclei-templates;
+    git clone https://github.com/maurosoria/dirsearch
+    git clone https://github.com/s0md3v/Corsy.git;
+    git clone https://github.com/hisxo/gitGraber.git;
+    git clone https://github.com/lobuhi/byp4xx.git;
+}
