@@ -71,11 +71,11 @@ case $number in
  	;;
  22)	bash sharedsmb.sh
  	;;
- 23)	bash
+ 23)	bash bruter.sh
  	;;
- 24)	bash
+ 24)	bash searchsploit.sh
  	;;
- 25)	bash
+ 25)	bash report.sh
  	;;
  *)	echo "Please give valid choice!!!"
  	;;
