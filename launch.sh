@@ -1,16 +1,25 @@
 #!/bin/bash
-echo	" 1.  subfinder		2. dnsx				3.  nuclei		"	
-echo	" 4.  httpx       	5. waybackurls            	6.  getallurls					"
-echo	" 7.  naabu   		8. aquatone               	9.  hakrawler						"
-echo	" 10. FFUF	 	11. dirsearch			12. amass "
-echo	" 13. dalfox		14. findomain			15. arjun"
-echo	" 16. LinkFinder		17. secretfinder		18. ParamSpider"
-echo	" 19. Corsy 		20. gitgraber 			21. byp4xx"
-echo    " 22. Subjack           23.webscreenshot "
+echo "█----------------------------------█"
+echo "█	      Scans                █     FTP SSH"
+echo "█----------------------------------█"
+echo "█ 1.  Host disvovery		   █   6. Check FTP vulners"	
+echo "█ 2.  Scan all TCP ports	   █   7. Are you FTP?"
+echo "█ 3.  Scan 1000 popular TCP ports  █ 8. Check FTP version"
+echo "█ 4.  Fast scan 		   █"
+echo "█ 5.  Scan 100 popular UDP ports   █"
+echo "█----------------------------------█"
+echo ""
+echo ""
 echo -n "Enter the respective number from tool list that you want to use: "
+
+
+
 read number
 echo ""
 
+
+
+SMB 		WEB	SMTP 		BruteForce		Searchsploit  		Report  
 case $number in
 	1)
 		cd /scritps
