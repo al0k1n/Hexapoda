@@ -1,4 +1,9 @@
 #!/bin/bash
+if ! command -v msfconsole &> /dev/null; then
+    echo "Error: msfconsole is not installed. Please install it before using this script."
+    exit 1
+fi
+
     #my_ip=$(ip addr show | grep 'inet 192' | awk '{print $2}' | cut -d'/' -f1)
     echo "Check the target for the EternalBlue vulnerability"
     echo -n "Write the IP: "
