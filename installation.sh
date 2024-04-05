@@ -1,4 +1,4 @@
-
+#!/bin/bash
 function setupEnvironment(){
     echo "Сhecking your system and setting up the environment: "
     eval $(echo "$sudoo apt update;")    
