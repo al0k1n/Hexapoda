@@ -23,7 +23,6 @@ echo ""
 echo ""
 echo ""
 echo -n "Enter the respective number from tool list that you want to use: "
-cd scripts
 read number
 echo ""
 case $number in
@@ -81,6 +80,5 @@ case $number in
  	;;
  *)	echo "Please give valid choice!!!"
  	;;
-  cd ..
 esac
 . "$scriptDir/launch.sh"
