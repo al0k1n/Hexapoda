@@ -1,7 +1,6 @@
 #!/bin/bash
-
 if ! command -v nikto &> /dev/null; then
-    echo "Error: dirsearch is not installed. Please install it before using this script."
+    echo "Error: nikto is not installed. Please install it before using this script."
     exit 1
 fi
 
