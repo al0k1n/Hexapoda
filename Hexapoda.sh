@@ -1,7 +1,7 @@
 #!/bin/bash
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-. "$scriptDir/logo.sh" # запуск лого
+. "$scriptDir/logoinstall.sh" # запуск лого
 . "$scriptDir/installation.sh" # запуск установки необходимых компонентов
 
 if [ -f "$scriptDir/.installed" ]; then
