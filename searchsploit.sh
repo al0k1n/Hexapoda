@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Проверка наличия searchsploit
 if ! command -v searchsploit &> /dev/null; then
     echo "Error: searchsploit is not installed. Please install it before using this script."
@@ -22,6 +21,6 @@ echo "Never limit yourself to searchsploit. Also, search in Google for 'program_
 read -p "Enter the keyword to search for vulnerabilities: " keyword
 
 # Поиск уязвимостей с использованием searchsploit и сохранение результатов в файл
-searchsploit "$keyword" > "$output_directory/$output_file"
+searchsploit "$keyword" | tee "$output_directory/$output_file"
 
 echo "Search results have been saved to $output_file."
