@@ -4,8 +4,11 @@ if ! command -v hydra &> /dev/null; then
     exit 1
 fi
 
-# Путь к директории для сохранения результатов
-output_dir="Hexapoda/outputs/"
+# Директория для сохранения результатов
+output_directory="outputs"
+# Имя файла для сохранения результатов
+output_file="bruter_out.txt"
+
 
 # Создание директории, если она не существует
 mkdir -p "$output_dir" || error_exit "Failed to create output directory: $output_dir"
@@ -30,5 +33,5 @@ read -p "[+] Enter the target (IP address): " target
 
 # Запуск Hydra для брутфорса
 echo "Bruteforce starting..."
-hydra -f -L "$login_file" -P "$password_file" -o "$output_dir/bruter_out.txt" -e ns -v "$protocol://$target"
+hydra -f -L "$login_file" -P "$password_file" -o "$output_directory/$output_file" -e ns -v "$protocol://$target"
 echo "BruteForce End!"
