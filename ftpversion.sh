@@ -12,3 +12,4 @@ read Target
 nmap -A -v $Target -p21 | tee "$output_directory/$output_file"
 echo "                                        "
 echo "Results have been saved to $output_file."
+echo "                                        "
