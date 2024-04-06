@@ -4,7 +4,11 @@ if ! command -v nmap &> /dev/null; then
     exit 1
 fi
 
+output_directory="outputs"
+output_file="ftpversion_out.txt"
+
 echo -n "[+] Enter Target : "
 read Target
-nmap -A -v $Target -p21 > "ftpversion_out.txt"
-echo -e "Data is saved as ftpversion_out.txt"
+nmap -A -v $Target -p21 | tee "$output_directory/$output_file"
+echo "                                        "
+echo "Results have been saved to $output_file."
