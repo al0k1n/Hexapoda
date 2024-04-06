@@ -19,7 +19,9 @@ fi
     result=$(nmap -p 445 --script smb-vuln-ms17-010.nse $target | grep "State: VULNERABLE")
 
     if [ -n "$result" ]; then
+        echo "                                                                                       "
         echo "BINGO!!! $target can be hacked using EternalBlue" | tee "$output_directory/$output_file"
+        echo "                                                                                       "
         
         while true; do
             read -p "Do you want to launch an attack? (Yes/No): " continue_input
@@ -37,5 +39,7 @@ fi
             fi
         done
     else
+        echo "                                                                                         "
         echo "Unlucky...$target cant be hacked using EternalBlue" | tee "$output_directory/$output_file"
+        echo "                                                                                         "
     fi
