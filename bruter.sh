@@ -4,9 +4,8 @@ if ! command -v hydra &> /dev/null; then
     exit 1
 fi
 
-# Директория для сохранения результатов
+
 output_directory="outputs"
-# Имя файла для сохранения результатов
 output_file="bruter_out.txt"
 
 
