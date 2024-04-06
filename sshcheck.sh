@@ -1,5 +1,5 @@
-!/bin/bash
+#!/bin/bash
+echo "After result, to terminate the process, press 'CTRL+C'."
 echo -n "[+] Enter Target : "
 read Target
-nc -nv $Target 22 > "sshcheck_out.txt"
-echo -e "Data is saved as sshcheck_out.txt"
+nc -nv $Target 22
