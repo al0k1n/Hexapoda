@@ -11,4 +11,6 @@ echo -n "[+] Enter Target : "
 read Target
 echo "Please wait..."
 enum4linux $Target | tee "$output_directory/$output_file"
+echo "                                      "
 echo -e "Results is saved as enumsmb_out.txt"
+echo "                                      "
