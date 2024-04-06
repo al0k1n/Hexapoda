@@ -4,22 +4,14 @@ if ! command -v msfconsole &> /dev/null; then
     exit 1
 fi
 
-scan_ports() {
-    echo -n "Enter Target: "
-    read Target
-    echo "Scanning ports..."
-    nmap -p 22 --open $Target
-}
+output_directory="outputs"
+output_file="sshversion_out.txt"
 
 # Функция для использования Metasploit для получения информации о SSH
-exploit_ssh() {
     echo -n "Enter Target: "
     read Target
     echo "Exploiting SSH..."
-    msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" > "sshversion_out.txt"
-    echo -e "Check sshversion_out.txt" 
-}
-
-# Вызов функций
-scan_ports
-exploit_ssh
+    msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" | tee "$output_directory/$output_file"
+    echo "                                        "
+    echo "Results have been saved to $output_file."
+    echo "                                        "
