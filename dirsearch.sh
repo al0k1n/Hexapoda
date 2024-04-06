@@ -24,4 +24,4 @@ read -p "Enter the target URL (http://example.com): " target_url
 # Запуск dirsearch для указанной цели и сохранение результатов в указанную директорию
 dirsearch -u "$target_url" -o "$output_directory/$output_file"
 
-echo "Search results have been saved to $output_file. It is located in the Hexapoda/scripts/outputs directory"
+echo "Results have been saved to $output_file. It is located in the Hexapoda/scripts/outputs directory"
