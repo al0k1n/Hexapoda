@@ -11,4 +11,5 @@ echo -n "[+] Enter Target : "
 read Target
 echo "Please wait..."
 nmap -F $Target | tee "$output_directory/$output_file"
+echo "                                        "
 echo "Results have been saved to $output_file."
