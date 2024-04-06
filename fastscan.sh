@@ -1,6 +1,6 @@
 #!/bin/bash
 # Проверка наличия команды nmap
-# Eсли команда nmap не найдена, выводится сообщение об ошибке и 
+# Eсли команда nmap не найдена, выводится сообщение об ошибке и
 # скрипт завершает свою работу с кодом выхода 1.
 if ! command -v nmap &> /dev/null; then
     echo "Error: nmap is not installed. Please install it before using this script."
@@ -14,7 +14,7 @@ output_file="fastscan_out.txt"
 
 echo -n "[+] Enter Target : "
 
-# Запрос на ввод 
+# Запрос на ввод
 read Target
 echo "Please wait..."
 
