@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Проверка наличия команды netdiscover
-# Eсли команда netdiscover не найдена, выводится сообщение об ошибке и 
+# Eсли команда netdiscover не найдена, выводится сообщение об ошибке и
 # скрипт завершает свою работу с кодом выхода 1.
 if ! command -v netdiscover &> /dev/null; then
     echo "Error: netdiscover is not installed. Please install it before using this script."
@@ -16,7 +16,7 @@ output_file="hostdiscovery_out.txt"
 
 echo "Example target: 0.0.0.0/24"
 echo -n "[+] Enter Target : "
-# Запрос на ввод 
+# Запрос на ввод
 read Target
 echo "Please wait..."
 
