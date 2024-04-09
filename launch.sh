@@ -1,4 +1,6 @@
 #!/bin/bash
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. "$scriptDir/logomenu.sh"
 NORMAL='\033[0m'      #  ${NORMAL}    # все атрибуты по умолчанию
 DEF='\033[0;39m'       #  ${DEF}
 DGRAY='\033[1;30m'     #  ${DGRAY}
