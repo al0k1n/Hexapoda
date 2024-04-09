@@ -32,7 +32,7 @@ output_directory="outputs"
 # Переменная, которая содержит имя файла для сохранения результатов
 output_file="fastscan_out.txt"
 
-echo -n "[+] Enter Target : "
+echo -en "${LYELLOW} ${LGREEN}[+]${NORMAL}\n Enter Target : "
 
 # Запрос на ввод
 read Target
