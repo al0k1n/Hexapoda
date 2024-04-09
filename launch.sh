@@ -42,7 +42,7 @@ echo -e "█----------------------------------█-------------------------█---
 echo ""
 echo ""
 echo ""
-echo -e "Enter the respective number from tool list that you want to use:\n "
+echo -en "${WHITE}Enter the respective number from tool list that you want to use: ${NORMAL}"
 read number
 echo ""
 case $number in
