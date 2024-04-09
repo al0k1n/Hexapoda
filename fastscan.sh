@@ -42,4 +42,4 @@ echo "Please wait..."
 # Результат выводится на экран и записывается в директорию outputs с названием fastscan_out.txt
 nmap -F $Target | tee "$output_directory/$output_file"
 echo "                                        "
-echo "${LYELLOW} ${LGREEN}Results have been saved to $output_file.${NORMAL}\n"
+echo -en "${LYELLOW} ${LGREEN}Results have been saved to $output_file.${NORMAL}\n"
