@@ -40,7 +40,7 @@ echo -e "█----------------------------------█-------------------------█---
 echo ""
 echo ""
 echo ""
-echo -e "Enter the respective number from tool list that you want to use: "
+echo -e "Enter the respective number from tool list that you want to use:\n "
 read number
 echo ""
 case $number in
