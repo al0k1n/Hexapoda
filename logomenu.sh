@@ -9,6 +9,15 @@ LMAGENTA='\033[1;35m'   #  ${LMAGENTA}
 LCYAN='\033[1;36m'     #  ${LCYAN}
 WHITE='\033[1;37m'     #  ${WHITE}
 
+BLACK='\033[0;30m'     #  ${BLACK}    # чёрный цвет знаков
+RED='\033[0;31m'       #  ${RED}      # красный цвет знаков
+GREEN='\033[0;32m'     #  ${GREEN}    # зелёный цвет знаков
+YELLOW='\033[0;33m'     #  ${YELLOW}    # желтый цвет знаков
+BLUE='\033[0;34m'       #  ${BLUE}      # синий цвет знаков
+MAGENTA='\033[0;35m'     #  ${MAGENTA}    # фиолетовый цвет знаков
+CYAN='\033[0;36m'       #  ${CYAN}      # цвет морской волны знаков
+GRAY='\033[0;37m'       #  ${GRAY}      # серый цвет знаков
+
 echo -e "                                                                                                                             ${WHITE}dddddddd                  "
 echo -e "${WHITE}HHHHHHHHH     HHHHHHHHH                                                                                                      d::::::d                  "
 echo -e "${WHITE}H:::::::H     H:::::::H                                                                                                      d::::::d                  "
@@ -33,7 +42,7 @@ echo -e "                                                                       
 echo -e "                                                                            ${LRED}p:::::::p                                                                  "
 echo -e "                                                                            ${LRED}ppppppppp                                                                  "
 echo -e "                                                                                                                                                       "
-echo -e "                                         ${LCYAN}"Hexapoda" software package for internal penetration testing  Version 1.0                                     "
-echo -e "                                                             ${LCYAN}[Coded By: Nikola Miloshevich]${NORMAL}                                                            "
+echo -e "                                         ${GREEN}"Hexapoda" software package for internal penetration testing  Version 1.0                                     "
+echo -e "                                                             ${GREEN}[Coded By: Nikola Miloshevich]${NORMAL}                                                            "
 echo -e "                                                                                                                                                       "
 echo -e "                                                                                                                                                       "
