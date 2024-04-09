@@ -8,6 +8,7 @@ LBLUE='\033[1;34m'     #  ${LBLUE}
 LMAGENTA='\033[1;35m'   #  ${LMAGENTA}
 LCYAN='\033[1;36m'     #  ${LCYAN}
 WHITE='\033[1;37m'     #  ${WHITE}
+green ='\e[1;32m' # ${green}
 
 BLACK='\033[0;30m'     #  ${BLACK}    # чёрный цвет знаков
 RED='\033[0;31m'       #  ${RED}      # красный цвет знаков
@@ -42,7 +43,7 @@ echo -e "                                                                       
 echo -e "                                                                            ${LRED}p:::::::p                                                                  "
 echo -e "                                                                            ${LRED}ppppppppp                                                                  "
 echo -e "                                                                                                                                                       "
-echo -e "                                         ${GREEN}"Hexapoda" software package for internal penetration testing  Version 1.0                                     "
-echo -e "                                                             ${GREEN}[Coded By: Nikola Miloshevich]${NORMAL}                                                            "
+echo -e "                                         ${green}"Hexapoda" software package for internal penetration testing  Version 1.0                                     "
+echo -e "                                                             ${green}[Coded By: Nikola Miloshevich]${NORMAL}                                                            "
 echo -e "                                                                                                                                                       "
 echo -e "                                                                                                                                                       "
