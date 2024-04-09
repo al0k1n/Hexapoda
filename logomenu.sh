@@ -8,7 +8,7 @@ LBLUE='\033[1;34m'     #  ${LBLUE}
 LMAGENTA='\033[1;35m'   #  ${LMAGENTA}
 LCYAN='\033[1;36m'     #  ${LCYAN}
 WHITE='\033[1;37m'     #  ${WHITE}
-green ='\e[1;32m' # ${green}
+green='\e[1;32m' # ${green}
 
 BLACK='\033[0;30m'     #  ${BLACK}    # чёрный цвет знаков
 RED='\033[0;31m'       #  ${RED}      # красный цвет знаков
