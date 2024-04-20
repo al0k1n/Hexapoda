@@ -19,14 +19,14 @@ MAGENTA='\033[0;35m'     #  ${MAGENTA}    # фиолетовый цвет зна
 CYAN='\033[0;36m'       #  ${CYAN}      # цвет морской волны знаков
 GRAY='\033[0;37m'       #  ${GRAY}      # серый цвет знаков
 
-echo -e "                                                                                                                              ${LRED}dddddddd                  "
-echo -e "${WHITE}HHHHHHHHH     HHHHHHHHH                                                                                               ${LRED}d::::::d                  "
-echo -e "${WHITE}H:::::::H     H:::::::H                                                                                               ${LRED}d::::::d                  "
-echo -e "${WHITE}H:::::::H     H:::::::H                                                                                               ${LRED}d::::::d                  "
-echo -e "${WHITE}HH::::::H     H::::::HH                                                                                               ${LRED}d:::::d                   "
-echo -e "  ${WHITE}H:::::H     H:::::H      eeeeeeeeeeee  xxxxxxx      xxxxxxxaaaaaaaaaaaaa$NORMAL  ${LRED}ppppp   ppppppppp      ooooooooooo       ddddddddd:::::d   aaaaaaaaaaaaa   "
-echo -e "  ${WHITE}H:::::H     H:::::H    ee::::::::::::ee x:::::x    x:::::x a::::::::::::a$NORMAL ${LRED}p::::ppp:::::::::p   oo:::::::::::oo   dd::::::::::::::d   a::::::::::::a  "
-echo -e "  ${WHITE}H::::::HHHHH::::::H   e::::::eeeee:::::eex:::::x  x:::::x  aaaaaaaaa:::::a$NORMAL${LRED}p:::::::::::::::::p o:::::::::::::::o d::::::::::::::::d   aaaaaaaaa:::::a "
+echo -e "                                                                                                                                           ${LRED}dddddddd                  "
+echo -e "${WHITE}HHHHHHHHH     HHHHHHHHH                                                                                                            ${LRED}d::::::d                  "
+echo -e "${WHITE}H:::::::H     H:::::::H                                                                                                            ${LRED}d::::::d                  "
+echo -e "${WHITE}H:::::::H     H:::::::H                                                                                                            ${LRED}d::::::d                  "
+echo -e "${WHITE}HH::::::H     H::::::HH                                                                                                             ${LRED}d:::::d                   "
+echo -e "  ${WHITE}H:::::H     H:::::H      eeeeeeeeeeee  xxxxxxx      xxxxxxxaaaaaaaaaaaaa$NORMAL  ${LRED} ppppp   ppppppppp      ooooooooooo       ddddddddd:::::d   aaaaaaaaaaaaa   "
+echo -e "  ${WHITE}H:::::H     H:::::H    ee::::::::::::ee x:::::x    x:::::x a::::::::::::a$NORMAL ${LRED} p::::ppp:::::::::p   oo:::::::::::oo   dd::::::::::::::d   a::::::::::::a  "
+echo -e "  ${WHITE}H::::::HHHHH::::::H   e::::::eeeee:::::eex:::::x  x:::::x  aaaaaaaaa:::::a$NORMAL${LRED} p:::::::::::::::::p o:::::::::::::::o d::::::::::::::::d   aaaaaaaaa:::::a "
 echo -e "  ${LBLUE}H:::::::::::::::::H  e::::::e     e:::::e x:::::xx:::::x            a::::a pp::::::ppppp::::::po:::::ooooo:::::od:::::::ddddd:::::d            a::::a "
 echo -e "  ${LBLUE}H:::::::::::::::::H  e:::::::eeeee::::::e  x::::::::::x      aaaaaaa:::::a p:::::p     p:::::po::::o     o::::od::::::d    d:::::d     aaaaaaa:::::a "
 echo -e "  ${LBLUE}H::::::HHHHH::::::H  e:::::::::::::::::e    x::::::::x     aa::::::::::::a p:::::p     p:::::po::::o     o::::od:::::d     d:::::d   aa::::::::::::a "
