@@ -14,7 +14,7 @@ green='\e[1;32m' # ${green}
 # Eсли команда netdiscover не найдена, выводится сообщение об ошибке и
 # скрипт завершает свою работу с кодом выхода 1.
 if ! command -v netdiscover &> /dev/null; then
-    echo "Error: netdiscover is not installed. Please install it before using this script."
+    echo -e "$LRED Error: netdiscover is not installed. Please install it before using this script.$NORMAL"
     exit 1
 fi
 
@@ -24,7 +24,7 @@ output_directory="outputs"
 # Переменная, которая содержит имя файла для сохранения результатов
 output_file="hostdiscovery_out.txt"
 
-echo -e "Example target: 0.0.0.0/24"
+echo -e "$WHITE Example target:$NORMAL $LYELLOW 0.0.0.0/24$NORMAL"
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL $WHITE Enter Target:$NORMAL "
 # Запрос на ввод
 read Target
