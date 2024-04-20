@@ -24,8 +24,8 @@ output_directory="outputs"
 # Переменная, которая содержит имя файла для сохранения результатов
 output_file="hostdiscovery_out.txt"
 
-echo -e "{$WHITE}Example target:{$NORMAL}{$LYELLOW} 0.0.0.0/24{$NORMAL}"
-echo -en "{$LMAGENTA}[{$NORMAL}{$LCYAN}+{$LMAGENTA}]{$NORMAL}{$WHITE} Enter Target:$NORMAL "
+echo -e "$WHITE Example target:$NORMAL$LYELLOW 0.0.0.0/24$NORMAL"
+echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 # Запрос на ввод
 read Target
 echo -e "$LYELLOW Please wait...$NORMAL"
