@@ -24,7 +24,7 @@ echo -e "${WHITE}HHHHHHHHH     HHHHHHHHH                                        
 echo -e "${WHITE}H:::::::H     H:::::::H                                                                                                      ${LRED}d::::::d                  "
 echo -e "${WHITE}H:::::::H     H:::::::H                                                                                                      ${LRED}d::::::d                  "
 echo -e "${WHITE}HH::::::H     H::::::HH                                                                                                       ${LRED}d:::::d                   "
-echo -e "  ${WHITE}H:::::H     H:::::H      eeeeeeeeeeee  xxxxxxx      xxxxxxxaaaaaaaaaaaaa$NORMAL  ${LRED} ppppp   ppppppppp      ooooooooooo       ddddddddd:::::d   aaaaaaaaaaaaa   "
+echo -e "  ${WHITE}H:::::H     H:::::H      eeeeeeeeeeee  xxxxxxx      xxxxxxxaaaaaaaaaaaaa$NORMAL  ${LRED} ppppppppppppppppp      ooooooooooo       ddddddddd:::::d   aaaaaaaaaaaaa   "
 echo -e "  ${WHITE}H:::::H     H:::::H    ee::::::::::::ee x:::::x    x:::::x a::::::::::::a$NORMAL ${LRED} p::::ppp:::::::::p   oo:::::::::::oo   dd::::::::::::::d   a::::::::::::a  "
 echo -e "  ${WHITE}H::::::HHHHH::::::H   e::::::eeeee:::::eex:::::x  x:::::x  aaaaaaaaa:::::a$NORMAL${LRED} p:::::::::::::::::p o:::::::::::::::o d::::::::::::::::d   aaaaaaaaa:::::a "
 echo -e "  ${LBLUE}H:::::::::::::::::H  e::::::e     e:::::e x:::::xx:::::x            a::::a pp::::::ppppp::::::po:::::ooooo:::::od:::::::ddddd:::::d            a::::a "
