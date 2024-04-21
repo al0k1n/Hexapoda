@@ -12,7 +12,7 @@ WHITE='\033[1;37m'     #  ${WHITE}
 green='\e[1;32m' # ${green}
 
 if ! command -v nmap &> /dev/null; then
-    echo "$LRED Error: nmap is not installed. Please install it before using this script.$NORMAL"
+    echo -e "$LRED Error: nmap is not installed. Please install it before using this script.$NORMAL"
     exit 1
 fi
 
