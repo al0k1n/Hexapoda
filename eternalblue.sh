@@ -35,7 +35,8 @@ fi
         echo "                                                                                       "
         
         while true; do
-            read -pe "$LCYAN Do you want to launch an attack? (Yes/No): $NORMAL" continue_input
+            echo -e "$LCYAN Do you want to launch an attack? (Yes/No): $NORMAL"
+            read continue_input
             if [ "$continue_input" == "Yes" ]; then
                 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter your IP address:$NORMAL "
                 read ip
