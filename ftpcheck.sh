@@ -9,7 +9,7 @@ LMAGENTA='\033[1;35m'   #  ${LMAGENTA}
 LCYAN='\033[1;36m'     #  ${LCYAN}
 WHITE='\033[1;37m'     #  ${WHITE}
 
-echo "$LYELLOW After result, to terminate the process, press 'CTRL+C'.$NORMAL"
+echo -e "$LYELLOW After result, to terminate the process, press 'CTRL+C'.$NORMAL"
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 
 # Запрос на ввод 
