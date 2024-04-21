@@ -13,7 +13,7 @@ WHITE='\033[1;37m'     #  ${WHITE}
 # Eсли команда netdiscover не найдена, выводится сообщение об ошибке и 
 # скрипт завершает свою работу с кодом выхода 1.
 if ! command -v nmap &> /dev/null; then
-    echo "$LRED Error: nmap is not installed. Please install it before using this script.$NORMAL"
+    echo -e "$LRED Error: nmap is not installed. Please install it before using this script.$NORMAL"
     exit 1
 fi
 
@@ -32,5 +32,5 @@ read Target
 # Тем самым произойдёт проверка на наличие уязвимостей FTP на целевом хосте.
 nmap --script ftp-* -p21 $Target | tee "$output_directory/$output_file"
 echo "                                        "
-echo "$LGREEN Results have been saved to $output_file.$NORMAL"
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
