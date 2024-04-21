@@ -33,4 +33,4 @@ tar -czf "$report_archive" -C "$temp_dir" .
 rm -rf "$temp_dir"
 
 echo -e "$LGREEN Reports have been collected and archived in $report_archive.$NORMAL"
-echo -e "$LGREEN Path: Hexapoda/scripts/outputs.$NORMAL"
+echo -e "$LGREEN Path: Hexapoda/outputs.$NORMAL"
