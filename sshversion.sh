@@ -13,7 +13,7 @@ WHITE='\033[1;37m'     #  ${WHITE}
 # Eсли команда msfconsole не найдена, выводится сообщение об ошибке и
 # скрипт завершает свою работу с кодом выхода 1.
 if ! command -v msfconsole &> /dev/null; then
-    echo "$LRED Error: msfconsole is not installed. Please install it before using this script.$NORMAL"
+    echo -e "$LRED Error: msfconsole is not installed. Please install it before using this script.$NORMAL"
     exit 1
 fi
 
@@ -23,8 +23,8 @@ output_file="sshversion_out.txt"
 # Команда для использования Metasploit для получения информации о SSH
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 read Target
-echo "$LYELLOW Exploiting SSH...$NORMAL"
+echo -e "$LYELLOW Exploiting SSH...$NORMAL"
 msfconsole -q -x "use auxiliary/scanner/ssh/ssh_version; set RHOSTS $Target;  run; exit" | tee "$output_directory/$output_file"
 echo "                                        "
-echo "$LGREEN Results have been saved to $output_file.$NORMAL"
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
