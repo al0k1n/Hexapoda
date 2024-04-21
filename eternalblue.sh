@@ -24,7 +24,7 @@ fi
     output_file="eternalblue_out.txt"
     
     #my_ip=$(ip addr show | grep 'inet 192' | awk '{print $2}' | cut -d'/' -f1)
-    echo -e "$LYELLOW Check the target for the$NORMAL $LBLUE EternalBlue$NORMAL $LYELLOW vulnerability$NORMAL"
+    echo -e "$LYELLOW Check the target for the$NORMAL$LBLUE EternalBlue$NORMAL$LYELLOW vulnerability$NORMAL"
     echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter the target's IP address:$NORMAL "
     read target
     result=$(nmap -p 445 --script smb-vuln-ms17-010.nse $target | grep "State: VULNERABLE")
