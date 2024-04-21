@@ -30,7 +30,8 @@ if [ ! -d "outputs" ]; then
 fi
 
 # Запрос цели для сканирования
-read -pe "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target $NORMAL URL $LYELLOW (http://example.com)$NORMAL$WHITE: $NORMAL" target_url
+echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target $NORMAL URL $LYELLOW (http://example.com)$NORMAL$WHITE: $NORMAL" 
+read target_url
 
 # Запуск dirsearch для указанной цели и сохранение результатов в указанную директорию
 dirsearch -u "$target_url" -o "$output_directory/$output_file"
