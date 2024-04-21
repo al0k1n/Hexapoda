@@ -23,8 +23,8 @@ echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Host:$NORMAL "
 read Host
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Port:$NORMAL "
 read Port
-echo "$LYELLOW Find users...$NORMAL"
+echo -e "$LYELLOW Find users...$NORMAL"
 msfconsole -q -x "use scanner/ssh/ssh_enumusers; set rhosts $Host; set RPORT $Port; set user_file /usr/share/wordlists/metasploit/default_users_for_services_unhash.txt; run; exit" | tee "$output_directory/$output_file"
 echo "                                        "
-echo "$LGREEN Results have been saved to $output_file.$NORMAL"
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
