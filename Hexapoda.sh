@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir outputs
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . "$scriptDir/logoinstall.sh" # запуск лого
