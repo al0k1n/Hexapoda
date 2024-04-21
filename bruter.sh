@@ -17,12 +17,8 @@ if ! command -v hydra &> /dev/null; then
 fi
 
 
-output_directory="outputs"
 output_file="bruter_out.txt"
 
-
-# Создание директории, если она не существует
-mkdir -p "$output_dir" || error_exit "Failed to create output directory: $output_dir"
 
 # Функция для вывода сообщения об ошибке и выхода из скрипта
 function error_exit {
@@ -37,8 +33,8 @@ echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter path to the pass
 read password_file
 
 # Проверка существования файлов с логинами и паролями
-[ -f "$login_file" ] || error_exit "Login file not found: $login_file"
-[ -f "$password_file" ] || error_exit "Password file not found: $password_file"
+[ -f "$login_file" ] || error_exit "$LRED Login file not found: $login_file$NORMAL"
+[ -f "$password_file" ] || error_exit "$LRED Password file not found: $password_file$NORMAL"
 
 # Запрос протокола и цели
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter the protocol $LYELLOW (ssh, ftp, telnet)$NORMAL$WHITE: $NORMAL" 
