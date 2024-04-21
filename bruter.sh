@@ -16,7 +16,7 @@ if ! command -v hydra &> /dev/null; then
     exit 1
 fi
 
-
+output_directory="outputs"
 output_file="bruter_out.txt"
 
 
