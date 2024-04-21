@@ -20,7 +20,7 @@ echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Domain (default 
 read Domain
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 read Target
-echo "$LYELLOW Please wait...$NORMAL"
+echo -e "$LYELLOW Please wait...$NORMAL"
 smbmap -u $User -p $Password -d $Domain -H $Target | tee "$output_directory/$output_file"
 echo "                                        "
 echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
