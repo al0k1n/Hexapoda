@@ -1,6 +1,7 @@
 nikola
 kola
 viola
+msfadmin
 maxpatrola
 sinabola
 olola
