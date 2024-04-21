@@ -11,7 +11,7 @@ WHITE='\033[1;37m'     #  ${WHITE}
 
 
 if ! command -v subfinder &> /dev/null; then
-    echo "$LRED Error: subfinder is not installed. Please install it before using this script.$NORMAL"
+    echo -e "$LRED Error: subfinder is not installed. Please install it before using this script.$NORMAL"
     exit 1
 fi
 
@@ -20,8 +20,8 @@ output_file="subfinder._out.txt"
 
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter the domain $LYELLOW(example.com)$NORMAL$WHITE:$NORMAL "
 read domain	
-echo "$LYELLOW Starting...$NORMAL" 
+echo -e "$LYELLOW Starting...$NORMAL" 
 subfinder -d $domain -o "$output_directory/$output_file"
 echo "                                        "
-echo "$LGREEN Results have been saved to $output_file.$NORMAL"
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
