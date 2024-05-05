@@ -19,5 +19,5 @@ read Target
 echo -e "$LYELLOW Please wait...$NORMAL"
 curl -i -L $Target | tee "$output_directory/$output_file"
 echo "                                        "
-echo "$LGREEN Results have been saved to $output_file.$NORMAL"
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
