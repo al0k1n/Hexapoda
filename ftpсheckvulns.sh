@@ -20,8 +20,8 @@ fi
 
 
 # Переменная, которая содержит имя файла для сохранения результатов
-output_directory ="outputs"
-output_file ="ftpvulns_out.txt"
+output_directory="outputs"
+output_file="ftpvulns_out.txt"
 
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 
