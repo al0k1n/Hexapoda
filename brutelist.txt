@@ -1,4 +1,6 @@
 nikola
+vagrant
+msfadmin
 kola
 viola
 msfadmin
