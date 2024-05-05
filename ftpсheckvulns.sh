@@ -20,6 +20,7 @@ fi
 
 
 # Переменная, которая содержит имя файла для сохранения результатов
+$output_directory ="outputs"
 output_file="ftpvulns_out.txt"
 
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
@@ -29,7 +30,7 @@ read Target
 
 # После получения целевого хоста скрипт использует nmap с опцией --script ftp-* для запуска всех скриптов, относящихся к FTP.
 # Тем самым произойдёт проверка на наличие уязвимостей FTP на целевом хосте.
-nmap --script ftp-* -p21 $Target | tee $output_file"
+nmap --script ftp-* -p21 $Target | tee "$output_directory/$output_file"
 echo "                                        "
 echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
