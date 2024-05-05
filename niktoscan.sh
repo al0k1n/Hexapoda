@@ -24,5 +24,5 @@ read Target
 echo -e "$LYELLOW Please wait...$NORMAL"
 nikto -h $Target | tee "$output_directory/$output_file"
 echo "                                        "
-echo "Results have been saved to $output_file."
+echo -e "$LGREEN Results have been saved to $output_file.$NORMAL"
 echo "                                        "
