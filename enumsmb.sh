@@ -14,13 +14,12 @@ if ! command -v enum4linux &> /dev/null; then
     exit 1
 fi
 
-output_directory="outputs"
 output_file="enumsmb_out.txt"
 
 echo -en "$LMAGENTA[$NORMAL$LCYAN+$LMAGENTA]$NORMAL$WHITE Enter Target:$NORMAL "
 read Target
 echo -e "$LYELLOW Please wait...$NORMAL"
-enum4linux $Target | tee "$output_directory/$output_file"
+enum4linux $Target | tee "$output_file"
 echo "                                      "
 echo -e "$LGREEN Results is saved as enumsmb_out.txt$NORMAL"
 echo "                                      "
